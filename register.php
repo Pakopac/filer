@@ -33,36 +33,35 @@ $title = "Register";
 
 ob_start();
 ?>
-
+    <div class="block_register">
         <form action="register.php" method="POST">
-            <div class="form-group">
-                <label for="firstname">First name</label>
-                <input type="text" name="firstname value="<?= $firstname ?>">
-            </div>
-            <div class="form-group">
-                <label for="lastname">Last name</label>
-                <input type="text" name="lastname" id="lastname" value="<?= $lastname ?>">
-            </div>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" value="<?= $username ?>">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" value="<?= $email ?>">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div class="form-group">
-                <label for="password_repeat">Repeat password</label>
-                <input type="password" name="password_repeat" id="password_repeat">
-            </div>
-            <button type="submit">Register</button>
+            <ul>
+                <li><label for="firstname">First name</label>
+                    <input type="text" name="firstname" id="firstname" value="<?= $firstname ?>"></li>
+
+                <li><label for="lastname">Last name</label>
+                    <input type="text" name="lastname" id="lastname" value="<?= $lastname ?>"></li>
+
+                <li><label for="username">Username</label>
+                    <input type="text" name="username" id="username" value="<?= $username ?>"></li>
+
+                <li><label for="email">Email</label>
+                    <input type="email" name="email" id="email" value="<?= $email ?>"></li>
+
+                <li><label for="password">Password</label>
+                    <input type="password" name="password" id="password"></li>
+
+                <li><label for="password_repeat">Repeat password</label>
+                    <input type="password" name="password_repeat" id="password_repeat"></li>
+
+            <li><button type="submit">Register</button></li>
+            </ul>
+
         </form>
+    </div>
 <?php
 $content = ob_get_contents();
 ob_end_clean();
 
 require('layout.php');
+
