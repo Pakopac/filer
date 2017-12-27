@@ -2,25 +2,34 @@ header{
     display: flex;
     text-align: center;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: rgba(223, 224, 77, 0.75);
-    margin: 0 50px;
-    border-radius: 30px;
+    background-color: rgba(117, 207, 224, 0.75);
     padding-bottom: 20px;
-    min-width: 800px;
+    margin: -10px;
 }
 .login{
     align-self: flex-end;
-    min-width: 150px;
-    width: 300px;
-    height: 120px;
-    font-size: 20px;
-    margin: 15px 150px 15px 0;
-    border: 3px solid black;
+    min-width: 300px;
+    height: 150px;
+    font-size: 25px;
+    margin: 15px 0 15px 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid #2c5091;
+    border-radius: 30px;
 
 }
+.login a{
+    text-decoration: none;
+    color: #006953;
+}
+.login a:hover{
+    color: #10223e;
+}
 h1{
-    font-size: 50px;
+    font-size: 65px;
+}
+h2{
+    font-size: 30px;
 }
 .titles{
     margin-left: 300px;
@@ -57,7 +66,7 @@ button{
     margin-left: -40px;
 }
 button:hover{
-    background: #2c5091;
+    background: rgba(117, 207, 224, 0.75);
     cursor: pointer;
 }
 .title-form{
