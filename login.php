@@ -6,8 +6,10 @@ $title = "Login";
     <form action="login.php" method="POST">
     <ul>
         <li><h2 class="title-login">Login</h2></li>
-<li>Pseudo :<input type="text">
-<li>Password :<input type="password">
+        <li><label for="pseudo">Pseudo :</label>
+            <input type="text" id="pseudo">
+        <li><label for="password">Password :</label>
+            <input type="password" id="password">
         <li><button>Login</button></li>
     </ul>
 </form>

@@ -28,6 +28,9 @@ li{
     margin-top: 25px;
     text-align: center;
 }
+label {
+    cursor: pointer;
+}
 input{
     width: 200px;
     height: 25px;
