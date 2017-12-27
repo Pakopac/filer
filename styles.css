@@ -70,3 +70,7 @@ button:hover{
     font-size: 50px;
     margin-left: -40px;
 }
+.errorLogin{
+    color: #d9041d;
+    margin-left: -50px;
+}

@@ -2,17 +2,17 @@
 require('init.php');
 $firstname = '';
 $lastname = '';
-$username = '';
+$pseudo = '';
 $email = '';
 $password = '';
 $password_repeat = '';
 if (!empty($_POST['firstname']) && !empty($_POST['lastname'])
-    && !empty($_POST['username']) && !empty($_POST['email'])
+    && !empty($_POST['pseudo']) && !empty($_POST['email'])
     && !empty($_POST['password']) && !empty($_POST['password_repeat']))
 {
     $firstname = htmlentities($_POST['firstname']);
     $lastname = htmlentities($_POST['lastname']);
-    $username = htmlentities($_POST['username']);
+    $pseudo = htmlentities($_POST['pseudo']);
     $email = htmlentities($_POST['email']);
     $password = $_POST['password'];
     $password_repeat = $_POST['password_repeat'];
@@ -21,7 +21,7 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname'])
     {
         $creation = date('Y-m-d H:i:s');
 
-        $q = "INSERT INTO `users` (`id`, `creation`, `firstname`, `lastname`, `username`, `email`, `password`) VALUES (NULL, '".$creation."', '".$firstname."', '".$lastname."', '".$username."', '".$email."', '".$password."')";
+        $q = "INSERT INTO `users` (`id`, `creation`, `firstname`, `lastname`, `pseudo`, `email`, `password`) VALUES (NULL, '".$creation."', '".$firstname."', '".$lastname."', '".$pseudo."', '".$email."', '".$password."')";
         mysqli_query($link, $q);
 
         header('Location: index.php');
@@ -43,11 +43,12 @@ ob_start();
                 <li><label for="lastname">Last name :</label>
                     <input type="text" id="lastname" name="lastname" value="<?= $lastname ?>"></li>
 
-                <li><label for="username">Username :</label>
-                    <input type="text" id="username" name="username" value="<?= $username ?>"></li>
-
                 <li><label for="email">Email :</label>
                     <input type="email" id="email" name="email" value="<?= $email ?>"></li>
+
+                <li><label for="pseudo">Pseudo :</label>
+                    <input type="text" id="pseudo" name="pseudo" value="<?= $pseudo ?>"></li>
+
 
                 <li><label for="password">Password :</label>
                     <input type="password" id="password" name="password"></li>
