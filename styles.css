@@ -7,9 +7,11 @@ header{
     margin: 0 50px;
     border-radius: 30px;
     padding-bottom: 20px;
+    min-width: 800px;
 }
 .login{
     align-self: flex-end;
+    min-width: 150px;
     width: 300px;
     height: 120px;
     font-size: 20px;

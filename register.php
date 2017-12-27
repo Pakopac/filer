@@ -38,22 +38,22 @@ ob_start();
             <ul>
                 <h2 class="title-form">Register</h2>
                 <li><label for="firstname">First name :</label>
-                    <input type="text" id="firstname" value="<?= $firstname ?>"></li>
+                    <input type="text" id="firstname" name="firstname" value="<?= $firstname ?>"></li>
 
                 <li><label for="lastname">Last name :</label>
-                    <input type="text" id="lastname" value="<?= $lastname ?>"></li>
+                    <input type="text" id="lastname" name="lastname" value="<?= $lastname ?>"></li>
 
                 <li><label for="username">Username :</label>
-                    <input type="text" id="username" value="<?= $username ?>"></li>
+                    <input type="text" id="username" name="username" value="<?= $username ?>"></li>
 
                 <li><label for="email">Email :</label>
-                    <input type="email" id="email" value="<?= $email ?>"></li>
+                    <input type="email" id="email" name="email" value="<?= $email ?>"></li>
 
                 <li><label for="password">Password :</label>
-                    <input type="password" id="password"></li>
+                    <input type="password" id="password" name="password"></li>
 
                 <li><label for="password_repeat">Repeat password : </label>
-                    <input type="password" id="password_repeat"></li>
+                    <input type="password" id="password_repeat" name="password_repeat"></li>
 
             <li><button type="submit">Register</button></li>
             </ul>
