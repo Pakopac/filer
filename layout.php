@@ -15,19 +15,19 @@
             </div>
             <div class="login">
                 <div class="col-2">
-                    <?php if (isset($_SESSION['username'])): ?>
-                        Logged in as <?= $_SESSION['username'] ?>
+                    <?php if (isset($_SESSION['pseudo'])): ?>
+                        Logged in as <?= $_SESSION['pseudo'] ?>
                     <?php else: ?>
                         Not logged in
                     <?php endif; ?>
                 </div>
                 <br><a href="index.php">Home</a>
-            <br> <?php if (isset($_SESSION['username'])): ?>
+            <br> <?php if (isset($_SESSION['pseudo'])): ?>
                 <a href="logout.php">Logout</a>
             <?php else: ?>
                 <a href="login.php">Login</a>
             <?php endif; ?>
-                <br><?php if (!isset($_SESSION['username'])): ?>
+                <br><?php if (!isset($_SESSION['pseudo'])): ?>
                     <a href="register.php">Register</a>
                 <?php endif; ?>
             </div>
