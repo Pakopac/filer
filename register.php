@@ -36,27 +36,27 @@ ob_start();
     <div class="block_register">
         <form action="register.php" method="POST">
             <ul>
-                <li><label for="firstname">First name</label>
+                <h2 class="title-form">Register</h2>
+                <li><label for="firstname">First name :</label>
                     <input type="text" name="firstname" id="firstname" value="<?= $firstname ?>"></li>
 
-                <li><label for="lastname">Last name</label>
+                <li><label for="lastname">Last name :</label>
                     <input type="text" name="lastname" id="lastname" value="<?= $lastname ?>"></li>
 
-                <li><label for="username">Username</label>
+                <li><label for="username">Username :</label>
                     <input type="text" name="username" id="username" value="<?= $username ?>"></li>
 
-                <li><label for="email">Email</label>
+                <li><label for="email">Email :</label>
                     <input type="email" name="email" id="email" value="<?= $email ?>"></li>
 
-                <li><label for="password">Password</label>
+                <li><label for="password">Password :</label>
                     <input type="password" name="password" id="password"></li>
 
-                <li><label for="password_repeat">Repeat password</label>
+                <li><label for="password_repeat">Repeat password :</label>
                     <input type="password" name="password_repeat" id="password_repeat"></li>
 
             <li><button type="submit">Register</button></li>
             </ul>
-
         </form>
     </div>
 <?php

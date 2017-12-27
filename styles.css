@@ -23,10 +23,40 @@ h1{
 .titles{
     margin-left: 300px;
 }
+li{
+    list-style-type: none;
+    margin-top: 25px;
+    text-align: center;
+}
+input{
+    width: 200px;
+    height: 25px;
+}
+.block_register{
+    background: #d5d5d5;
+    margin-left: 27%;
+    margin-right: 27%;
+    margin-top: 3%;
+    border: 3px solid black;
+    border-radius: 7px;
+    font-size: 30px;
+}
 button{
     width: 70px;
     height: 30px;
+    background: #d5d5d5;
+    border: 2px solid #2aabed;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
 }
-ul{
-    list-style-type: none;
+button:hover{
+    background: #2c5091;
+    cursor: pointer;
+}
+.title-form{
+    color: #2c5091;
+    font-size: 50px;
+    margin-left: 150px;
 }
