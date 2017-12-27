@@ -52,7 +52,7 @@ ob_start();
                 <li><label for="password">Password :</label>
                     <input type="password" name="password" id="password"></li>
 
-                <li><label for="password_repeat">Repeat password :</label>
+                <li><label for="password_repeat">Repeat password : </label>
                     <input type="password" name="password_repeat" id="password_repeat"></li>
 
             <li><button type="submit">Register</button></li>

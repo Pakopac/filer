@@ -31,6 +31,7 @@ li{
 input{
     width: 200px;
     height: 25px;
+    font-size: 25px;
 }
 .block_register{
     background: #d5d5d5;
@@ -42,14 +43,13 @@ input{
     font-size: 30px;
 }
 button{
-    width: 70px;
-    height: 30px;
     background: #d5d5d5;
     border: 2px solid #2aabed;
     border-radius: 5px;
     width: 200px;
     height: 50px;
     font-size: 30px;
+    margin-left: -40px;
 }
 button:hover{
     background: #2c5091;
@@ -59,4 +59,9 @@ button:hover{
     color: #2c5091;
     font-size: 50px;
     margin-left: 150px;
+}
+.title-login{
+    color: #2c5091;
+    font-size: 50px;
+    margin-left: -40px;
 }
