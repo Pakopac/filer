@@ -8,9 +8,9 @@ header{
 }
 .login{
     align-self: flex-end;
-    min-width: 300px;
-    height: 150px;
-    font-size: 25px;
+    min-width: 250px;
+    height: 110px;
+    font-size: 20px;
     margin: 15px 0 15px 180px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -26,10 +26,10 @@ header{
     color: #10223e;
 }
 h1{
-    font-size: 65px;
+    font-size: 50px;
 }
 h2{
-    font-size: 30px;
+    font-size: 25px;
 }
 .titles{
     margin-left: 300px;
@@ -82,4 +82,17 @@ button:hover{
 .errorLogin{
     color: #d9041d;
     margin-left: -50px;
+}
+.messageWelcome{
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+}
+.messageNotLogged{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4b42ed;
 }
