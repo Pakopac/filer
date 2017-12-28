@@ -1,3 +1,6 @@
+body{
+    background: rgba(220, 228, 242, 0.36);
+}
 header{
     display: flex;
     text-align: center;
