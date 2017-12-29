@@ -33,7 +33,7 @@
             </div>
         </header>
         </nav>
-        <div id="content" class="row">
+        <div class="content">
             <?php echo $content; ?>
         </div>
     </div>

@@ -11,8 +11,9 @@ ob_start();
     <div class="messageNotLogged">You need to logged in to upload and access at your files</div>
  <?php endif; ?>
 <?php if (isset($_SESSION['pseudo'])):?>
-    <div class="messageLogged">Upload and share your files here :</div>
-    <input type="file">
+    <div class="messageUpload">Upload your files here :</div>
+    <label for="file" class="labelFile">Upload a file</label>
+    <input type="file" id="file" class="inputFile">
 <?php endif; ?>
 <?php
 $content = ob_get_contents();
