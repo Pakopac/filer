@@ -27,13 +27,6 @@ header{
     border-radius: 30px;
 
 }
-.login a{
-    text-decoration: none;
-    color: #006953;
-}
-.login a:hover{
-    color: #10223e;
-}
 h1{
     font-size: 50px;
 }
@@ -112,10 +105,10 @@ button:hover{
     margin-left: 35%;
 }
 .labelFile{
-    margin-left: 27%;
     width: 100px;
     border: 1px solid black;
     padding: 150px;
+    margin-left: 25%;
 }
 .inputFile{
     display: none;
@@ -135,4 +128,16 @@ button:hover{
 }
 .labelFile:hover {
     background: #d5d5d5;
+}
+.linkCheck{
+    font-size: 25px;
+    color: #006953;
+    margin: 30px;
+}
+a{
+    text-decoration: none;
+    color: #006953;
+}
+a:hover{
+    color: #10223e;
 }

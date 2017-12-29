@@ -11,8 +11,9 @@ ob_start();
     <div class="messageNotLogged">You need to logged in to upload and access at your files</div>
  <?php endif; ?>
 <?php if (isset($_SESSION['pseudo'])):?>
+    <div class="linkCheck"><a href="checkFiles.php">Click here to check your files</a></div>
     <div class="messageUpload">Upload your files here :</div>
-    <label for="file" class="labelFile"><img class="spear" src="img/spear.jpg"><img class="icon_file" src="img/icon_file.png"></label>
+    <label for="file" class="labelFile"><img class="spear" src="img/spear.png"><img class="icon_file" src="img/icon_file.png"></label>
     <input type="file" id="file" class="inputFile">
 <?php endif; ?>
 <?php
