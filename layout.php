@@ -21,11 +21,13 @@
                         Not logged in
                     <?php endif; ?>
                 </div>
-                <br><a href="index.php">Home</a>
             <br> <?php if (isset($_SESSION['pseudo'])): ?>
-                <a href="logout.php">Logout</a>
+                <a href="uploadFiles.php">Upload Files</a>
+                <br><a href="checkFiles.php">Check Files</a>
+                <br><a href="logout.php">Logout</a>
             <?php else: ?>
-                <a href="login.php">Login</a>
+                    <a href="index.php">Home</a>
+                <br><a href="login.php">Login</a>
                 <br><a href="register.php">Register</a>
             <?php endif; ?>
             </div>
