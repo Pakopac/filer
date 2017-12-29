@@ -12,7 +12,7 @@ ob_start();
  <?php endif; ?>
 <?php if (isset($_SESSION['pseudo'])):?>
     <div class="messageUpload">Upload your files here :</div>
-    <label for="file" class="labelFile">Upload a file</label>
+    <label for="file" class="labelFile"><img class="spear" src="img/spear.jpg"><img class="icon_file" src="img/icon_file.png"></label>
     <input type="file" id="file" class="inputFile">
 <?php endif; ?>
 <?php
