@@ -26,10 +26,8 @@
                 <a href="logout.php">Logout</a>
             <?php else: ?>
                 <a href="login.php">Login</a>
+                <br><a href="register.php">Register</a>
             <?php endif; ?>
-                <br><?php if (!isset($_SESSION['pseudo'])): ?>
-                    <a href="register.php">Register</a>
-                <?php endif; ?>
             </div>
         </header>
         </nav>
