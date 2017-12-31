@@ -13,10 +13,24 @@ ob_start();
 <?php if (isset($_SESSION['pseudo'])):?>
     <div class="link"><a href="checkFiles.php">Click here to check your files</a></div>
     <div class="messageUpload">Upload your files here :</div>
+
+    <form name="upload" method="POST" action="uploadFiles.php" enctype="multipart/form-data">
     <label for="file" class="labelFile"><img class="spear" src="img/spear.png"><img class="icon_file" src="img/icon_file.png"></label>
-    <input type="file" id="file" class="inputFile">
-<?php endif; ?>
+    <input type="file" id="file" name="inputFile" class="inputFile" onchange="this.form.submit();">
+    </form>
+
 <?php
+endif;
+if (isset($_POST['upload']))
+{
+    $file = $_FILES['inputFile']['name'];
+    $q = "INSERT INTO `files` (`id`, `name`) VALUES (NULL, '".$file."')";
+    mysqli_query($link, $q);
+
+    header('Location: upload.php');
+    exit();
+}
+
 $content = ob_get_contents();
 ob_end_clean();
 
