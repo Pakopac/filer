@@ -32,7 +32,6 @@
             <?php endif; ?>
             </div>
         </header>
-        </nav>
         <div class="content">
             <?php echo $content; ?>
         </div>

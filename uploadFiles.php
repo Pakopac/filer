@@ -21,17 +21,21 @@ ob_start();
 
 <?php
 endif;
-if (isset($_POST['upload']))
-{
-    $file = $_FILES['inputFile']['name'];
-    $q = "INSERT INTO `files` (`id`, `name`) VALUES (NULL, '".$file."')";
-    mysqli_query($link, $q);
-
-    header('Location: upload.php');
-    exit();
+if(isset($_FILES['inputFile'])) {
+    $uploaddir = 'files/';
+    $file = basename($_FILES['inputFile']['name']);
+    if(move_uploaded_file($_FILES['inputFile']['tmp_name'], $uploaddir . $file))
+    {
+        echo 'File send !';
+    }
+    else
+    {
+        echo 'File not send !';
+    }
 }
 
-$content = ob_get_contents();
-ob_end_clean();
+
+    $content = ob_get_contents();
+    ob_end_clean();
 
 require('layout.php');
