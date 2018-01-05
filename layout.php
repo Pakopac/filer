@@ -10,8 +10,8 @@
     <div class="container">
         <header>
             <div class="titles">
-                <h1>hyperFiles</h1>
-                <h2>upload and share</h2>
+                <h1>HyperFiles</h1>
+                <h2>Upload all of your Files</h2>
             </div>
             <div class="login">
                 <div class="col-2">
