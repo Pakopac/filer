@@ -10,8 +10,8 @@ ob_start();
 echo '<ul>';
 if($dir = opendir('files/' . $pseudo . '')) {
     while (false !== ($file = readdir($dir))) {
-        if($file != '.' && $file != '..' && $file != 'index.php') {
-            echo '<li><a class="files" href="files/'.$pseudo.'/'.$file.'" download="'.$file.'">' . $file . '</a></li>';
+        if($file != '.' && $file != '..') {
+            echo '<li><a name="nameFile" class="files" href="files/'.$pseudo.'/'.$file.'" download="'.$file.'">' . $file . '</a></li>';
         }
 
         }

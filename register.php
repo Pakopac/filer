@@ -25,7 +25,15 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname'])
         mysqli_query($link, $q);
         mkdir('./files/'.$pseudo);
 
-        header('Location: index.php');
+        $p = "SELECT * FROM users WHERE password = '". $password . "' AND pseudo = '" . $pseudo . "'";
+        $result = mysqli_query($link, $p);
+        $user = mysqli_fetch_assoc($result);
+
+        session_start();
+        $_SESSION['id'] = $user['id'];
+        $_SESSION['pseudo'] = $user['pseudo'];
+
+        header('Location: uploadFiles.php');
         exit();
     }
 }
