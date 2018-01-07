@@ -2,6 +2,7 @@
 require('init.php');
 
 $title = "Home";
+$pseudo = ($_SESSION['pseudo']);
 
 ob_start();
 ?>
@@ -22,7 +23,7 @@ ob_start();
 <?php
 endif;
 if(isset($_FILES['inputFile'])) {
-    $uploaddir = 'files/';
+    $uploaddir = 'files/'.$pseudo.'/';
     $file = basename($_FILES['inputFile']['name']);
     if(move_uploaded_file($_FILES['inputFile']['tmp_name'], $uploaddir . $file))
     {
