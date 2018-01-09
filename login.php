@@ -41,7 +41,7 @@ ob_start();
         <li><label for="password">Password :</label>
             <input type="password" id="password" name="password" value="<?= $password?>">
 
-        <li><button>Login</button></li>
+        <li><button class="btnForm">Login</button></li>
         <li class="errorLogin"><?= $error ?></li>
     </ul>
 </form>
