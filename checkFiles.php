@@ -1,3 +1,4 @@
+<script src="script.js"></script>
 <?php
 require ('init.php');
 $title = "MyFiles";
@@ -11,10 +12,20 @@ echo '<ul>';
 if($dir = opendir('files/' . $pseudo . '')) {
     while (false !== ($file = readdir($dir))) {
         if($file != '.' && $file != '..') {
-            echo '<li><a name="nameFile" class="files" href="files/'.$pseudo.'/'.$file.'" download>' . $file . '</a>
-            <img class="icons" src="img/icon_edit.png">
-            <img class="icons" src="img/icon_delete.png">
-        </li>';
+            echo '<li class="file"><a name="nameFile" class="nameFile" href="files/'.$pseudo.'/'.$file.'" download>' . $file . '</a>
+            <a href="#pop-up"><img class="icon_edit" src="img/icon_edit.png"></a>
+            <img class="icon_delete" src="img/icon_delete.png">
+        </li>
+        <div id="pop-up">
+    <div class="popUp">
+        <ul>
+            <li class="exitPopup"><a href="#">X</a></li>
+            <li class="edit">Change the File name</li>
+            <li><input class="inputEdit" type="text" value="'.$file.'"></li>
+            <li><a href="#"><button class="btnForm" id="btnEdit">Enter</button></a></li>
+        </ul>
+    </div>
+</div>';
         }
 
         }
