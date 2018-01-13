@@ -8,7 +8,6 @@ if (isset($_POST['newName'])) {
 if (isset($_GET['name'])){
     $fileName = $_GET['name'];
     };
-
 ob_start();
 ?>
     <div class="link"><a href="uploadFiles.php">Click here to upload a file</a></div>
@@ -27,13 +26,15 @@ ob_start();
                         <form method="POST">
                             <li class="exitPopup"><a href="#">X</a></li>
                             <li class="edit">Change the File name</li>
-                            <li><input name="newName" class="inputEdit" type="text" value=<?=$fileName?>></li>
+                            <li><input name="newName" class="inputEdit" type="text" value=<?=$fileName?>
+
                             <li><a href="#"><button class="btnForm" id="btnEdit">Enter</button></a></li>
                             <?php if (isset($rename)){
                                 $file = $fileName;
                                 header("Location: rename.php?name=$file&newName=$rename");
                                 }
                                 ?>
+                            <li><img src="img/icon_danger.png" class="icon_danger"><div class="ext">Dont change the extension</div></li>
                         </form>
                     </ul>
                 </div>
