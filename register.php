@@ -33,7 +33,7 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname'])
         $_SESSION['id'] = $user['id'];
         $_SESSION['pseudo'] = $user['pseudo'];
 
-        header('Location: uploadFiles.php');
+        header('Location: index.php');
         exit();
     }
 }

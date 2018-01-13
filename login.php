@@ -21,7 +21,7 @@ if (!empty($_POST['pseudo']) && !empty($_POST['password'])){
         $_SESSION['id'] = $user['id'];
         $_SESSION['pseudo'] = $user['pseudo'];
 
-        header('Location: uploadFiles.php');
+        header('Location: index.php');
         exit();
     }
 }
