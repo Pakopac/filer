@@ -33,7 +33,9 @@
             </div>
         </header>
         <div class="content">
-            <?php echo $content; ?>
+            <?php if (isset($content)){
+                echo $content;
+            } ?>
         </div>
     </div>
   </body>
