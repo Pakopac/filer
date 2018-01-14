@@ -19,13 +19,16 @@ if (isset($_SESSION['pseudo'])):
     if(isset($_FILES['inputFile'])) {
         $uploaddir = 'files/'.$pseudo.'/';
         $file = basename($_FILES['inputFile']['name']);
-        if(move_uploaded_file($_FILES['inputFile']['tmp_name'], $uploaddir . $file)) {
+        if(file_exists($uploaddir.$file)){
+            echo '<div class="fileNotSend"> Error: File already exist</div>';
+        }
+        elseif(move_uploaded_file($_FILES['inputFile']['tmp_name'], $uploaddir . $file)) {
             echo '<div class="fileSend"> File send !</div>';
         }
-        else{
-            echo '<div class="fileNotSend"> Error: File not send !</div>';
+            else {
+                echo '<div class="fileNotSend"> Error: File not send !</div>';
+            }
         }
-    }
 endif;
 $content = ob_get_contents();
 ob_end_clean();
