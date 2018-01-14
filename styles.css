@@ -3,9 +3,7 @@ html{
 }
 body{
     background: rgba(220, 228, 242, 0.36);
-}
-.home{
-
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -14,6 +12,7 @@ header{
     background-color: rgba(117, 207, 224, 0.75);
     padding-bottom: 20px;
     margin: -10px;
+    width: 500vw;
 }
 .login{
     align-self: flex-end;
@@ -58,6 +57,9 @@ input{
     border-radius: 7px;
     font-size: 30px;
 }
+.error{
+    color: #cc0400;
+}
 .btnForm{
     background: #d5d5d5;
     border: 2px solid #2aabed;
@@ -73,17 +75,13 @@ input{
 }
 .title-form{
     color: #2c5091;
-    font-size: 50px;
-    margin-left: 150px;
+    font-size: 60px;
+    font-weight: bold;
 }
 .title-login{
     color: #2c5091;
     font-size: 50px;
     margin-left: -40px;
-}
-.errorLogin{
-    color: #d9041d;
-    margin-left: -50px;
 }
 .messageWelcome{
     font-size: 80px;
@@ -122,7 +120,6 @@ input{
     margin-left: 35%;
 }
 .labelFile{
-    width: 100px;
     border: 1px solid black;
     padding: 150px;
     margin-left: 25%;
@@ -145,6 +142,18 @@ input{
 }
 .labelFile:hover {
     background: #d5d5d5;
+}
+.fileSend{
+    font-size: 50px;
+    color: #00CC00;
+    margin-left: 480px;
+    margin-top: -230px;
+}
+.fileNotSend{
+    font-size: 50px;
+    color: #cc0400;
+    margin-left: 370px;
+    margin-top: -230px;
 }
 .link{
     font-size: 25px;

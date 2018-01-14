@@ -27,10 +27,11 @@ if (isset($_SESSION['pseudo'])):?>
             <?php if ($file != '.' && $file != '..'):?>
 
                 <ul>
-                <li class="file"><a name="nameFile" class="nameFile" href="files/<?= $pseudo ?>/<?= $file?>" download><?= $file ?></a>
-                    <a href="?name=<?= $file?>#pop-up"><img class="icon_edit" src="img/icon_edit.png"></a>
-                    <a href=" delete.php?name=<?= $file ?>"> <img class="icon_delete" src="img/icon_delete.png"></a>
+                <li class="file"><a class="nameFile" href="files/<?= $pseudo ?>/<?= $file?>" download><?= $file ?></a>
+                    <a href="?name=<?= $file?>#pop-up"><img class="icon_edit" src="img/icon_edit.png" alt="icon edit"></a>
+                    <a href=" delete.php?name=<?= $file ?>"> <img class="icon_delete" src="img/icon_delete.png" alt="icon delete"></a>
                 </li>
+                </ul>
 
                 <div id="pop-up">
                     <div class="popUp">
@@ -40,12 +41,11 @@ if (isset($_SESSION['pseudo'])):?>
                                     <li class="edit">Change the File name</li>
                                     <li><input type="text" name="newName" class="inputEdit" value="<?=$fileName?>"></li>
                                     <li><a href="#"><button class="btnForm" id="btnEdit">Enter</button></a></li>
-                                    <li><img src="img/icon_danger.png" class="icon_danger"><div class="ext">Dont change the extension</div></li>
+                                    <li><img src="img/icon_danger.png" class="icon_danger" alt="icon danger"><div class="ext">Dont change the extension</div></li>
                                 </ul>
                             </form>
                     </div>
                 </div>
-                </ul>
 
             <?php endif; ?>
         <?php endwhile; ?>
