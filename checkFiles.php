@@ -29,7 +29,7 @@ if (isset($_SESSION['pseudo'])):?>
                 <ul>
                 <li class="file"><a class="nameFile" href="files/<?= $pseudo ?>/<?= $file?>" download><?= $file ?></a>
                     <a href="?name=<?= $file?>#pop-up"><img class="icon_edit" src="img/icon_edit.png" alt="icon edit"></a>
-                    <a href=" delete.php?name=<?= $file ?>"> <img class="icon_delete" src="img/icon_delete.png" alt="icon delete"></a>
+                    <a href="delete.php?name=<?= $file?>"><img class="icon_delete" src="img/icon_delete.png" alt="icon delete"></a>
                 </li>
                 </ul>
 
